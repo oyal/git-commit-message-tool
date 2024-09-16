@@ -4,6 +4,7 @@ import com.intellij.openapi.ui.ComboBox;
 import com.intellij.openapi.ui.DialogWrapper;
 import com.intellij.ui.components.JBTextArea;
 import com.intellij.ui.components.JBTextField;
+import com.intellij.util.ui.JBUI;
 import org.jetbrains.annotations.Nullable;
 
 import javax.swing.*;
@@ -33,11 +34,8 @@ public class CommitTemplateDialog extends DialogWrapper {
         JPanel formPanel = new JPanel(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.fill = GridBagConstraints.HORIZONTAL;
-        gbc.insets = new Insets(5, 5, 5, 5);
-        gbc.weightx = 1.0;
-        gbc.weighty = 1.0;
+        gbc.insets = JBUI.insets(5);
 
-        // Label constraints
         gbc.weightx = 0.2;
         gbc.gridx = 0;
         gbc.gridy = 0;
@@ -55,7 +53,6 @@ public class CommitTemplateDialog extends DialogWrapper {
         gbc.gridy++;
         formPanel.add(new JLabel("Skip CI"), gbc);
 
-        // Input field constraints
         gbc.weightx = 0.8;
         gbc.gridx = 1;
         gbc.gridy = 0;
@@ -115,7 +112,6 @@ public class CommitTemplateDialog extends DialogWrapper {
     }
 
     public void setScope(String scope) {
-        System.out.println("scope: " + scope);
         scopeField.setText(scope);
     }
 

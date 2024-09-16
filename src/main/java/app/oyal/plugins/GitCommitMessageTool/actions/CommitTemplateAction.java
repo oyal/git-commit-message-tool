@@ -50,7 +50,7 @@ public class CommitTemplateAction extends AnAction {
     }
 
     private CommitMessageData parseCommitMessage(String commitMessage) {
-        Pattern pattern = Pattern.compile("^(\\w+)(?:\\(([^)]+)\\))?: (.+?)(?:\\n\\n(.+?))?(?:\\n\\nBREAKING CHANGE: (.+?))?(?:\\n\\nCloses: (.+?))?(?:\\n\\n\\[skip ci\\])?$", Pattern.DOTALL);
+        Pattern pattern = Pattern.compile("^(\\w+)(?:\\(([^)]+)\\))?: (.+?)(?:\\n\\n(.+?))?(?:\\n\\nBREAKING CHANGE: (.+?))?(?:\\n\\nCloses: (.+?))?(?:\\n\\n\\[skip ci])?$", Pattern.DOTALL);
         Matcher matcher = pattern.matcher(commitMessage);
 
         if (matcher.find()) {
