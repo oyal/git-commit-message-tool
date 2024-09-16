@@ -1,7 +1,8 @@
 # Git Commit Message Tool
 
-## Description
-
-This is a simple tool to help you write better commit messages. It will guide you through the process of writing a commit message and will help you to follow the best practices.
+## 简介
+<!-- Plugin description -->
+Git Commit Message Tool 是一个用于生成标准化 Git 提交信息的 IntelliJ IDEA 插件。通过该插件，用户可以方便地填写提交信息的各个部分，并确保提交信息符合约定的格式。
+<!-- Plugin description end -->
 
 ![screenshot](./.github/readme/screenshot.png)
