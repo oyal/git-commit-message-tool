@@ -1,4 +1,4 @@
-package app.oyal.plugins.GitCommitMessageTool.ui;
+package app.oyal.plugins.gitcommitmessagetool.ui;
 
 import com.intellij.openapi.ui.ComboBox;
 import com.intellij.openapi.ui.DialogWrapper;
@@ -21,7 +21,7 @@ public class CommitTemplateDialog extends DialogWrapper {
 
     public CommitTemplateDialog() {
         super(true);
-        setTitle("提交");
+        setTitle("Commit");
         setSize(750, 520);
         init();
     }
@@ -39,17 +39,17 @@ public class CommitTemplateDialog extends DialogWrapper {
         gbc.weightx = 0.2;
         gbc.gridx = 0;
         gbc.gridy = 0;
-        formPanel.add(new JLabel("更改类型"), gbc);
+        formPanel.add(new JLabel("Change Type"), gbc);
         gbc.gridy++;
-        formPanel.add(new JLabel("变更范围"), gbc);
+        formPanel.add(new JLabel("Scope"), gbc);
         gbc.gridy++;
-        formPanel.add(new JLabel("简短描述"), gbc);
+        formPanel.add(new JLabel("Short Description"), gbc);
         gbc.gridy++;
-        formPanel.add(new JLabel("详情描述"), gbc);
+        formPanel.add(new JLabel("Detailed Description"), gbc);
         gbc.gridy++;
-        formPanel.add(new JLabel("重大变更"), gbc);
+        formPanel.add(new JLabel("Breaking Change"), gbc);
         gbc.gridy++;
-        formPanel.add(new JLabel("关闭问题"), gbc);
+        formPanel.add(new JLabel("Closed Issues"), gbc);
         gbc.gridy++;
         formPanel.add(new JLabel("Skip CI"), gbc);
 
@@ -57,17 +57,17 @@ public class CommitTemplateDialog extends DialogWrapper {
         gbc.gridx = 1;
         gbc.gridy = 0;
         typeComboBox = new ComboBox<>(new String[]{
-                "feat - 新功能",
-                "fix - 修复错误",
-                "docs - 仅文档更改",
-                "style - 不影响代码含义的更改（空格、格式、缺少分号等）",
-                "refactor - 既不修复错误也不添加功能的代码更改",
-                "perf - 提高性能的代码更改",
-                "test - 添加缺失的测试或更正现有的测试",
-                "build - 更改构建系统或外部依赖项（例如：gulp、broccoli、npm）",
-                "ci - 更改持续集成配置文件和脚本（例如：Travis、Circle、BrowserStack、SauceLabs）",
-                "chore - 构建过程或辅助工具和库（如文档生成）的更改",
-                "revert - 撤销先前的提交"
+                "feat - A new feature",
+                "fix - A bug fix",
+                "docs - Documentation only changes",
+                "style - Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)",
+                "refactor - A code change that neither fixes a bug nor adds a feature",
+                "perf - A code change that improves performance",
+                "test - Adding missing tests or correcting existing tests",
+                "build - Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)",
+                "ci - Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)",
+                "chore - Other changes that don't modify src or test files",
+                "revert - Reverts a previous commit"
         });
         formPanel.add(typeComboBox, gbc);
         gbc.gridy++;

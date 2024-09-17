@@ -1,4 +1,4 @@
-package app.oyal.plugins.GitCommitMessageTool.actions;
+package app.oyal.plugins.gitcommitmessagetool.actions;
 
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
@@ -6,7 +6,7 @@ import com.intellij.openapi.editor.Document;
 import com.intellij.openapi.vcs.CommitMessageI;
 import com.intellij.openapi.vcs.VcsDataKeys;
 import org.jetbrains.annotations.NotNull;
-import app.oyal.plugins.GitCommitMessageTool.ui.CommitTemplateDialog;
+import app.oyal.plugins.gitcommitmessagetool.ui.CommitTemplateDialog;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
