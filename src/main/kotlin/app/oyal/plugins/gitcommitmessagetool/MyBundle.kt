@@ -1,4 +1,4 @@
-package app.oyal.plugins.GitCommitMessageTool
+package app.oyal.plugins.gitcommitmessagetool
 
 import com.intellij.DynamicBundle
 import org.jetbrains.annotations.NonNls

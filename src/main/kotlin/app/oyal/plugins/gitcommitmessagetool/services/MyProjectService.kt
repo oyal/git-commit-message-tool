@@ -1,9 +1,9 @@
-package app.oyal.plugins.GitCommitMessageTool.services
+package app.oyal.plugins.gitcommitmessagetool.services
 
 import com.intellij.openapi.components.Service
 import com.intellij.openapi.diagnostic.thisLogger
 import com.intellij.openapi.project.Project
-import app.oyal.plugins.GitCommitMessageTool.MyBundle
+import app.oyal.plugins.gitcommitmessagetool.MyBundle
 
 @Service(Service.Level.PROJECT)
 class MyProjectService(project: Project) {

@@ -1,4 +1,4 @@
-package app.oyal.plugins.GitCommitMessageTool.listeners
+package app.oyal.plugins.gitcommitmessagetool.listeners
 
 import com.intellij.openapi.application.ApplicationActivationListener
 import com.intellij.openapi.diagnostic.thisLogger

@@ -8,6 +8,14 @@
 
     <resource-bundle>messages.MyBundle</resource-bundle>
 
+    <!-- <extensions defaultExtensionNs="com.intellij"> -->
+    <!--     <toolWindow factoryClass="app.oyal.plugins.gitcommitmessagetool.toolWindow.MyToolWindowFactory" id="MyToolWindow"/> -->
+    <!-- </extensions> -->
+
+    <!-- <applicationListeners> -->
+    <!--     <listener class="app.oyal.plugins.gitcommitmessagetool.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/> -->
+    <!-- </applicationListeners> -->
+
     <actions>
         <action id="app.oyal.plugins.gitcommitmessagetool.CommitTemplateAction"
                 class="app.oyal.plugins.gitcommitmessagetool.actions.CommitTemplateAction"

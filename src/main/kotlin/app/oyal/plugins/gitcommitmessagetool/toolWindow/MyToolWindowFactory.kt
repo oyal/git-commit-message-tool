@@ -1,4 +1,4 @@
-package app.oyal.plugins.GitCommitMessageTool.toolWindow
+package app.oyal.plugins.gitcommitmessagetool.toolWindow
 
 import com.intellij.openapi.components.service
 import com.intellij.openapi.diagnostic.thisLogger
@@ -8,8 +8,8 @@ import com.intellij.openapi.wm.ToolWindowFactory
 import com.intellij.ui.components.JBLabel
 import com.intellij.ui.components.JBPanel
 import com.intellij.ui.content.ContentFactory
-import app.oyal.plugins.GitCommitMessageTool.MyBundle
-import app.oyal.plugins.GitCommitMessageTool.services.MyProjectService
+import app.oyal.plugins.gitcommitmessagetool.MyBundle
+import app.oyal.plugins.gitcommitmessagetool.services.MyProjectService
 import javax.swing.JButton
 
 
